@@ -1,0 +1,8 @@
+# Backend dependencies (run: pip install -r requirements.txt)
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+
+# Frontend dependencies are managed via frontend/package.json (npm install)
+# Run: cd frontend && npm install

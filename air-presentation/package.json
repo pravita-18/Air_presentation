@@ -1,0 +1,13 @@
+{
+  "name": "air-presentation",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"cd backend && uvicorn app.main:app --reload\" \"cd frontend && npx vite --host\"",
+    "install-all": "cd backend && pip install -r requirements.txt && cd frontend && npm install",
+    "build": "cd frontend && npx vite build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
